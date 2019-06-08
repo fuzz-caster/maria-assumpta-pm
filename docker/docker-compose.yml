@@ -1,0 +1,15 @@
+version: '3'
+services:
+  maria_assumpta_db:
+    image: "postgres:latest"
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: maria_assumpta
+      POSTGRES_USER: maria_assumpta
+      POSTGRES_DB: maria_assumpta
+  maria_assumpta_adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
