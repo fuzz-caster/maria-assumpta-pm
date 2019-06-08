@@ -1,0 +1,57 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const typeorm_1 = require("typeorm");
+const Question_entity_1 = require("./Question.entity");
+const CreditRequest_entity_1 = require("./CreditRequest.entity");
+const Base_1 = require("./Base");
+let Answer = class Answer {
+};
+__decorate([
+    typeorm_1.PrimaryGeneratedColumn(),
+    __metadata("design:type", Number)
+], Answer.prototype, "id", void 0);
+__decorate([
+    typeorm_1.Column(),
+    __metadata("design:type", String)
+], Answer.prototype, "text", void 0);
+__decorate([
+    typeorm_1.Column('float'),
+    __metadata("design:type", Number)
+], Answer.prototype, "weight", void 0);
+__decorate([
+    typeorm_1.Column(),
+    __metadata("design:type", Number)
+], Answer.prototype, "questionId", void 0);
+__decorate([
+    typeorm_1.ManyToOne(type => Question_entity_1.Question, question => question.answers, {
+        onDelete: 'CASCADE'
+    }),
+    typeorm_1.JoinColumn({
+        name: 'questionId'
+    }),
+    __metadata("design:type", Question_entity_1.Question)
+], Answer.prototype, "question", void 0);
+__decorate([
+    typeorm_1.Column(type => Base_1.Base),
+    __metadata("design:type", Base_1.Base)
+], Answer.prototype, "base", void 0);
+__decorate([
+    typeorm_1.ManyToMany(type => CreditRequest_entity_1.CreditRequest, creditRequest => creditRequest.answers, {
+        onDelete: 'CASCADE'
+    }),
+    __metadata("design:type", Array)
+], Answer.prototype, "requests", void 0);
+Answer = __decorate([
+    typeorm_1.Entity()
+], Answer);
+exports.Answer = Answer;
+//# sourceMappingURL=Answer.entity.js.map
