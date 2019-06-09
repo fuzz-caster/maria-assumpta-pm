@@ -6,10 +6,11 @@
   "license": "MIT",
   "engines": { 
     "node": "11.9.0",
+    "npm": "6.4.1",
     "yarn": "1.12.3"
   },
   "scripts": {
-    "build": "npx tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "concurrently --handle-input \"wait-on dist/main.js && nodemon\" \"tsc -w -p tsconfig.build.json\" ",

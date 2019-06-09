@@ -2485,7 +2485,6 @@
       "outDir": "/home/you/project14/maria-assumpta-pm/dist",
       "baseUrl": "/home/you/project14/maria-assumpta-pm/",
       "incremental": true,
-      "watch": true,
       "project": "tsconfig.build.json",
       "configFilePath": "/home/you/project14/maria-assumpta-pm/tsconfig.build.json"
     },
