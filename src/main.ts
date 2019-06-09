@@ -9,15 +9,17 @@ console.log(`Running in ${namePrefix} mode...`)
 // console.log(process.env)
 
 import { NestFactory } from '@nestjs/core';
+import { NestExpressApplication } from '@nestjs/platform-express';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 
 declare const module: any;
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
   app.enableCors();
+  app.useStaticAssets(join(__dirname, '..', 'public'));
 
   const options = new DocumentBuilder()
     .setTitle('Cats example')

@@ -26,7 +26,7 @@ import { AuthController } from "./routes/auth.controller"
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true,
+      synchronize: false,
       extra: {
         ssl: true
       }
