@@ -26,8 +26,7 @@ function bootstrap() {
             .build();
         const document = swagger_1.SwaggerModule.createDocument(app, options);
         swagger_1.SwaggerModule.setup('swagger', app, document);
-        const port = parseInt(process.env.PORT);
-        yield app.listen(port);
+        yield app.listen(process.env.PORT);
     });
 }
 bootstrap();

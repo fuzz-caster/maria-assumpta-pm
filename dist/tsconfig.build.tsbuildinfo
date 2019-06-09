@@ -2366,7 +2366,7 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "/home/you/project14/maria-assumpta-pm/src/main.ts": {
-        "version": "82df7adbbe7eb33bf234a71e2bba5db5532c8f44e2bb568fbef5de6c7453a84f",
+        "version": "fac324200745d4d49a11f550050d5a803ede103458c62ffff65966933750958a",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/common.d.ts": {
@@ -11080,7 +11080,6 @@
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/swagger/dist/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/swagger/index.d.ts",
-      "/home/you/project14/maria-assumpta-pm/src/main.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/common.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/array.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
@@ -11106,7 +11105,8 @@
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/jest/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/json5/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/superagent/index.d.ts",
-      "/home/you/project14/maria-assumpta-pm/node_modules/@types/supertest/index.d.ts"
+      "/home/you/project14/maria-assumpta-pm/node_modules/@types/supertest/index.d.ts",
+      "/home/you/project14/maria-assumpta-pm/src/main.ts"
     ]
   },
   "version": "3.4.3"
