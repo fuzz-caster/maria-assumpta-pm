@@ -19,13 +19,17 @@ import { AuthController } from "./routes/auth.controller"
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
+      logging: true,
       host: process.env.DB_HOST,
-      port: parseInt(process.env.DB_PORT),
+      port: 5432,
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true
+      synchronize: true,
+      extra: {
+        ssl: true
+      }
     }),
     TypeOrmModule.forFeature([
       Pegawai,

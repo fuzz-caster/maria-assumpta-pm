@@ -1,8 +1,12 @@
 // Dotenv configuration
+import { join } from 'path'
 import * as dotenv from 'dotenv'
-dotenv.config()
 
-console.log(process.env.NODE_ENV)
+const namePrefix = process.env.NODE_ENV
+const envFile = join(process.cwd(), `.${namePrefix}.env`)
+dotenv.config({ path: envFile })
+console.log(`Running in ${namePrefix} mode...`)
+// console.log(process.env)
 
 import { NestFactory } from '@nestjs/core';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
