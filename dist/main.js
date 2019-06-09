@@ -10,6 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv = require("dotenv");
 dotenv.config();
+console.log(process.env.NODE_ENV);
 const core_1 = require("@nestjs/core");
 const swagger_1 = require("@nestjs/swagger");
 const app_module_1 = require("./app.module");
