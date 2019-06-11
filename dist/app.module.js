@@ -15,6 +15,7 @@ const Member_entity_1 = require("./entities/Member.entity");
 const CreditRequest_entity_1 = require("./entities/CreditRequest.entity");
 const Answer_entity_1 = require("./entities/Answer.entity");
 const Question_entity_1 = require("./entities/Question.entity");
+const pm_1 = require("./pm");
 const pegawai_controller_1 = require("./routes/pegawai.controller");
 const member_controller_1 = require("./routes/member.controller");
 const question_controller_1 = require("./routes/question.controller");
@@ -28,13 +29,14 @@ AppModule = __decorate([
         imports: [
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'postgres',
+                logging: true,
                 host: process.env.DB_HOST,
-                port: parseInt(process.env.DB_PORT),
+                port: 5432,
                 username: process.env.DB_USERNAME,
                 password: process.env.DB_PASSWORD,
                 database: process.env.DB_NAME,
                 entities: [__dirname + '/**/*.entity{.ts,.js}'],
-                synchronize: true
+                synchronize: false
             }),
             typeorm_1.TypeOrmModule.forFeature([
                 Pegawai_entity_1.Pegawai,
@@ -42,7 +44,8 @@ AppModule = __decorate([
                 CreditRequest_entity_1.CreditRequest,
                 Question_entity_1.Question,
                 Answer_entity_1.Answer
-            ])
+            ]),
+            pm_1.ProfileMatchingModule
         ],
         controllers: [app_controller_1.AppController, pegawai_controller_1.PegawaiController, member_controller_1.MemberController, question_controller_1.QuestionController, answer_controller_1.AnswerController, credit_request_controller_1.CreditRequestController, auth_controller_1.AuthController],
         providers: [app_service_1.AppService],

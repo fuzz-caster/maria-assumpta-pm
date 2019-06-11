@@ -2,10 +2,10 @@
 import { join } from 'path'
 import * as dotenv from 'dotenv'
 
-const namePrefix = process.env.NODE_ENV
-const envFile = join(process.cwd(), `.${namePrefix}.env`)
-dotenv.config({ path: envFile })
-console.log(`Running in ${namePrefix} mode...`)
+const namePrefix = process.env.NODE_ENV;
+const envFile = join(process.cwd(), `.${namePrefix}.env`);
+dotenv.config({ path: envFile });
+console.log(`Running in ${namePrefix} mode...`);
 // console.log(process.env)
 
 import { NestFactory } from '@nestjs/core';

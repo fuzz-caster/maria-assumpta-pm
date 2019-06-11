@@ -8,9 +8,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const path_1 = require("path");
 const dotenv = require("dotenv");
-dotenv.config();
-console.log(process.env.NODE_ENV);
+const namePrefix = process.env.NODE_ENV;
+const envFile = path_1.join(process.cwd(), `.${namePrefix}.env`);
+dotenv.config({ path: envFile });
+console.log(`Running in ${namePrefix} mode...`);
 const core_1 = require("@nestjs/core");
 const swagger_1 = require("@nestjs/swagger");
 const app_module_1 = require("./app.module");
@@ -18,6 +21,7 @@ function bootstrap() {
     return __awaiter(this, void 0, void 0, function* () {
         const app = yield core_1.NestFactory.create(app_module_1.AppModule);
         app.enableCors();
+        app.useStaticAssets(path_1.join(__dirname, '..', 'public'));
         const options = new swagger_1.DocumentBuilder()
             .setTitle('Cats example')
             .setDescription('The cats API description')

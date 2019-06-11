@@ -20,4 +20,10 @@ describe('AppController (e2e)', () => {
       .expect(200)
       .expect('Hello World!');
   });
+
+  it('/api/v1/profile-matching/run (GET)', () => {
+    return request(app.getHttpServer())
+      .get('/api/v1/profile-matching/run')
+      .expect(200);
+  });
 });

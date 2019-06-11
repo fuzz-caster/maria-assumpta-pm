@@ -1,0 +1,10 @@
+pg_dump postgresql://mariaassumpta:mariaassumpta@mariaassumpta.c1rcblzltnpt.us-west-2.rds.amazonaws.com/mariaassumpta
+pg_dump postgresql://mariaassumpta:mariaassumpta@54.203.219.107/mariaassumpta
+
+I_AM_DISZZY_HALP_AWS
+foobar___I_AM_DISZZY_HALP_AWS
+
+AKIA3GCHUDX4UTTFGWUI
+YLc1+i0s9W6KToCqqx/rV7lxxlYpwHDlXCa1bupd
+
+docker run -it --rm jbergknoff/postgresql-client postgresql://mariaassumpta:mariaassumpta@mariaassumpta.c1rcblzltnpt.us-west-2.rds.amazonaws.com:5432
