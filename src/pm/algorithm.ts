@@ -10,9 +10,9 @@ const GAP_LOOKUP = new Map<number, number>(
 )
 
 export function computeDifference (xs: Matrix, ptarget: number[]) : Matrix {
-  if (xs.length >= 20) {
-    throw new Error(`Length of matrix can't be >= 20`);
-  }
+  // if (xs.length >= 20) {
+  //   throw new Error(`Length of matrix can't be >= 20`);
+  // }
   return xs.map(row => 
     zip(row, ptarget).map(([ x, gap ]) => 
       gap - x

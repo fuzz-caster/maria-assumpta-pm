@@ -51,14 +51,18 @@ let CreditRequestController = class CreditRequestController {
     }
     getOneWithRelations(id) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this._repo.findOne(id, {
+            let result = yield this._repo.findOne(id, {
                 relations: ['answers', 'answers.question', 'answers.question.answers', 'member']
             });
+            console.log(result.id);
+            console.log(result.answers.map(it => `id=(${it.id}), weight(${it.weight})`));
+            return result;
         });
     }
     update(id, payload) {
         return __awaiter(this, void 0, void 0, function* () {
             let cr = yield this._repo.findOneOrFail(id);
+            console.log(`answers_ids = ${payload.answerList}`);
             let answers = yield this._em.findByIds(Answer_entity_1.Answer, payload.answerList);
             cr.answers = answers;
             yield this._repo.save(cr);

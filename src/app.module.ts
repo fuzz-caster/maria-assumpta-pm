@@ -21,7 +21,7 @@ import { AuthController } from "./routes/auth.controller"
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      logging: true,
+      logging: false,
       host: process.env.DB_HOST,
       port: 5432,
       username: process.env.DB_USERNAME,

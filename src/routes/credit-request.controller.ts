@@ -38,14 +38,18 @@ export class CreditRequestController {
 
   @Get(":id")
   async getOneWithRelations (@Param("id") id: number) {
-    return await this._repo.findOne(id, {
+    let result = await this._repo.findOne(id, {
       relations: ['answers', 'answers.question', 'answers.question.answers', 'member']
-    })
+    });
+    console.log(result.id);
+    console.log(result.answers.map(it => `id=(${it.id}), weight(${it.weight})`))
+    return result;
   }
 
   @Put(":id")
   async update (@Param("id") id: number, @Body() payload: UpdateCRPayload) {
     let cr = await this._repo.findOneOrFail(id)
+    console.log(`answers_ids = ${payload.answerList}`);
     let answers = await this._em.findByIds(Answer, payload.answerList)
     cr.answers = answers
     await this._repo.save(cr)

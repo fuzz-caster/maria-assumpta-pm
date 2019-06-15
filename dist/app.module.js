@@ -29,7 +29,7 @@ AppModule = __decorate([
         imports: [
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'postgres',
-                logging: true,
+                logging: false,
                 host: process.env.DB_HOST,
                 port: 5432,
                 username: process.env.DB_USERNAME,

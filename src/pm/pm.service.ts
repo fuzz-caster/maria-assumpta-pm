@@ -48,7 +48,6 @@ export class ProfileMatchingService {
     });
 
     let crAnswers = crData.map(cr => cr.answers);
-    // console.log(cr)
     let crAnswersOrdered = crAnswers
       .map(
         // Answers is [Answer] (Array of answer)
@@ -63,6 +62,7 @@ export class ProfileMatchingService {
     let diffs = computeDifference(crAnswersOrdered, profileTargets);
     let gapped = applyGap(diffs);
     let totalCoreAndSecond = _totalCriteria(gapped, isCfArray, qOrderValues);
+    console.log(totalCoreAndSecond[6]);
     let weights = [0.15, 0.25, 0.25, 0.30, 0.05];
     let rankTotal = totalValues(totalCoreAndSecond, weights);
 

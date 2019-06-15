@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.eb72f61cb18713127ad6e7aaa54b62ba.js"
+  "/precache-manifest.dbe1d46b00bc4393e946bbd64cfb8eb1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "maria-assumpta-client"});
