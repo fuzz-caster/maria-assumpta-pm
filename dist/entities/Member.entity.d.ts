@@ -8,6 +8,7 @@ export declare class Member {
     id: number;
     nama: string;
     noHp: string;
+    noAnggota: string;
     alamat: string;
     statusTerakhir: string;
     limitKredit: number;

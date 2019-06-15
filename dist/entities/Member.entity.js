@@ -32,6 +32,10 @@ __decorate([
     __metadata("design:type", String)
 ], Member.prototype, "noHp", void 0);
 __decorate([
+    typeorm_1.Column({ nullable: true }),
+    __metadata("design:type", String)
+], Member.prototype, "noAnggota", void 0);
+__decorate([
     typeorm_1.Column(),
     __metadata("design:type", String)
 ], Member.prototype, "alamat", void 0);

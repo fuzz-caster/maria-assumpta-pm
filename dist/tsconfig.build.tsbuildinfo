@@ -2094,8 +2094,8 @@
         "signature": "2d7583f41e378578c2daed785bf121c8264f4aada4dcd1d7677964e237cf2657"
       },
       "/home/you/project14/maria-assumpta-pm/src/entities/Member.entity.ts": {
-        "version": "9d5bb0ecae50b1f55b48ea2b482c31aa21f009f0a44f9d24064d6a412d5c0f93",
-        "signature": "5638b45bb1d22264b228afe500f8b75d46d624b189779ddb2dc1c9e1a3819123"
+        "version": "73394aeb3c32d31f4b3fc2350adc0ac58bdcd316b1a340783d8ec2831e474f61",
+        "signature": "ca0a9e210db61141a36edc0204831dda45429d131fa5182a636489a89a3b8e59"
       },
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/common.d.ts": {
         "version": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
@@ -2158,11 +2158,11 @@
         "signature": "f637eb6e9a55e0b76327c9c96c44a4b4b2c70db41d4c8ec47217e0a7ffd265a3"
       },
       "/home/you/project14/maria-assumpta-pm/src/pm/algorithm.ts": {
-        "version": "870fbb2cd42e0fa45122d336b142475311fd1c65fa42f47dd93acb265ac4f540",
+        "version": "3e1239e60d4698f098a42dde074034fabbff66a77776f17a95b19060b7b3460d",
         "signature": "cc6f717137d6aa2341186956b13cf0fec6b97293069530db8a510013e512a287"
       },
       "/home/you/project14/maria-assumpta-pm/src/pm/pm.service.ts": {
-        "version": "31d331818b5b1131d2b09e0babdd5ce9609d195bf061073aeb4b0a86106e405f",
+        "version": "928a09ee01f823f4d472fff0771ffd43c19e4f2551c3d5c15b291f97445752b7",
         "signature": "20603bb6f089c3d3d97575406a2edee47068d3137028053c5b9ead513eca6ebb"
       },
       "/home/you/project14/maria-assumpta-pm/src/pm/pm.controller.ts": {
@@ -2569,7 +2569,6 @@
       "outDir": "/home/you/project14/maria-assumpta-pm/dist",
       "baseUrl": "/home/you/project14/maria-assumpta-pm/",
       "incremental": true,
-      "watch": true,
       "project": "tsconfig.build.json",
       "configFilePath": "/home/you/project14/maria-assumpta-pm/tsconfig.build.json"
     },
@@ -11351,10 +11350,6 @@
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/typeorm/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/src/entities/Base.ts",
       "/home/you/project14/maria-assumpta-pm/src/entities/Pegawai.entity.ts",
-      "/home/you/project14/maria-assumpta-pm/src/entities/Question.entity.ts",
-      "/home/you/project14/maria-assumpta-pm/src/entities/Answer.entity.ts",
-      "/home/you/project14/maria-assumpta-pm/src/entities/CreditRequest.entity.ts",
-      "/home/you/project14/maria-assumpta-pm/src/entities/Member.entity.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/common.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/array.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
@@ -11368,25 +11363,10 @@
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/string.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/common/util.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/lodash/ts3.1/index.d.ts",
-      "/home/you/project14/maria-assumpta-pm/src/entities/index.ts",
-      "/home/you/project14/maria-assumpta-pm/src/pm/converter.ts",
-      "/home/you/project14/maria-assumpta-pm/src/pm/algorithm.ts",
-      "/home/you/project14/maria-assumpta-pm/src/pm/pm.controller.ts",
-      "/home/you/project14/maria-assumpta-pm/src/pm/pm.module.ts",
-      "/home/you/project14/maria-assumpta-pm/src/pm/index.ts",
       "/home/you/project14/maria-assumpta-pm/src/dto/pegawai.ts",
-      "/home/you/project14/maria-assumpta-pm/src/dto/member.ts",
       "/home/you/project14/maria-assumpta-pm/src/dto/question.ts",
       "/home/you/project14/maria-assumpta-pm/src/dto/answer.ts",
       "/home/you/project14/maria-assumpta-pm/src/dto/FindOptions.ts",
-      "/home/you/project14/maria-assumpta-pm/src/dto/index.ts",
-      "/home/you/project14/maria-assumpta-pm/src/routes/pegawai.controller.ts",
-      "/home/you/project14/maria-assumpta-pm/src/routes/member.controller.ts",
-      "/home/you/project14/maria-assumpta-pm/src/routes/question.controller.ts",
-      "/home/you/project14/maria-assumpta-pm/src/routes/answer.controller.ts",
-      "/home/you/project14/maria-assumpta-pm/src/routes/credit-request.controller.ts",
-      "/home/you/project14/maria-assumpta-pm/src/routes/auth.controller.ts",
-      "/home/you/project14/maria-assumpta-pm/src/app.module.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/core/adapters/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/core/constants.d.ts",
@@ -11456,7 +11436,6 @@
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/swagger/dist/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@nestjs/swagger/index.d.ts",
-      "/home/you/project14/maria-assumpta-pm/src/main.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/connect/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/body-parser/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/cookiejar/index.d.ts",
@@ -11469,7 +11448,27 @@
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/json5/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/superagent/index.d.ts",
       "/home/you/project14/maria-assumpta-pm/node_modules/@types/supertest/index.d.ts",
-      "/home/you/project14/maria-assumpta-pm/src/pm/pm.service.ts"
+      "/home/you/project14/maria-assumpta-pm/src/entities/Question.entity.ts",
+      "/home/you/project14/maria-assumpta-pm/src/entities/Answer.entity.ts",
+      "/home/you/project14/maria-assumpta-pm/src/entities/CreditRequest.entity.ts",
+      "/home/you/project14/maria-assumpta-pm/src/entities/Member.entity.ts",
+      "/home/you/project14/maria-assumpta-pm/src/entities/index.ts",
+      "/home/you/project14/maria-assumpta-pm/src/pm/converter.ts",
+      "/home/you/project14/maria-assumpta-pm/src/pm/algorithm.ts",
+      "/home/you/project14/maria-assumpta-pm/src/pm/pm.service.ts",
+      "/home/you/project14/maria-assumpta-pm/src/pm/pm.controller.ts",
+      "/home/you/project14/maria-assumpta-pm/src/pm/pm.module.ts",
+      "/home/you/project14/maria-assumpta-pm/src/pm/index.ts",
+      "/home/you/project14/maria-assumpta-pm/src/dto/member.ts",
+      "/home/you/project14/maria-assumpta-pm/src/dto/index.ts",
+      "/home/you/project14/maria-assumpta-pm/src/routes/pegawai.controller.ts",
+      "/home/you/project14/maria-assumpta-pm/src/routes/member.controller.ts",
+      "/home/you/project14/maria-assumpta-pm/src/routes/question.controller.ts",
+      "/home/you/project14/maria-assumpta-pm/src/routes/answer.controller.ts",
+      "/home/you/project14/maria-assumpta-pm/src/routes/credit-request.controller.ts",
+      "/home/you/project14/maria-assumpta-pm/src/routes/auth.controller.ts",
+      "/home/you/project14/maria-assumpta-pm/src/app.module.ts",
+      "/home/you/project14/maria-assumpta-pm/src/main.ts"
     ]
   },
   "version": "3.4.3"

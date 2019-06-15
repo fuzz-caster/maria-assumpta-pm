@@ -18,6 +18,9 @@ export class Member {
   @Column()
   noHp: string;
 
+  @Column({ nullable: true })
+  noAnggota: string;
+
   @Column()
   alamat: string;
 
